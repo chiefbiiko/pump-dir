@@ -1,0 +1,31 @@
+{
+  "name": "pump-dir",
+  "version": "0.0.0",
+  "description": "copy dir from node",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiefbiiko/pump-dir.git"
+  },
+  "keywords": [
+    "copy",
+    "directory"
+  ],
+  "author": "Noah Anabiik Schwarz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chiefbiiko/pump-dir/issues"
+  },
+  "homepage": "https://github.com/chiefbiiko/pump-dir#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "tape": "^4.8.0"
+  },
+  "dependencies": {
+    "pump": "^3.0.0",
+    "tar-fs": "^1.16.0"
+  }
+}
