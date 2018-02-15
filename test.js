@@ -15,8 +15,9 @@ tape('copy dir', function (t) {
   copy('node_modules', 'clone_modules', function (err) {
     if (err) t.end(err)
     t.true(fs.existsSync('clone_modules'), 'dir cloned')
-    del.sync('clone_modules')
-    t.end()
+    del('clone_modules').then(function () {
+      t.end()
+    })
   })
 })
 
@@ -25,7 +26,8 @@ tape('ignorant', function (t) {
     if (err) t.end(err)
     t.true(fs.existsSync('once'), 'once cloned')
     t.true(fs.readdirSync('once').every(js), 'only js')
-    del.sync('once')
-    t.end()
+    del('once').then(function () {
+      t.end()
+    })
   })
 })
